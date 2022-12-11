@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>instagram</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!-- Class로 CSS 적용 -->
+    <style>
+	    .box {
+		    width: 150px;
+		    height: 150px;
+		    border-radius: 70%;
+		    overflow: hidden;
+		}
+		.profile {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		}
+		.like_profile {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		}
+    </style>
+
+  </head>
+
+  <body>
+  	<nav class="navbar navbar-expand-lg bg-light" style="position: fixed; width: 100%">
+        <div class="container-fluid" style="justify-content: space-between; flex-wrap: nowrap; min-width: 1000px">
+            <a class="navbar-brand" href="#"><img style="width: 100px" src="https://cdn2.downdetector.com/static/uploads/logo/Instagram_Logo_Large.png"></a>
+            <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
+            <div>
+		        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48">home</span>
+		        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48">send</span>
+		        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48">add_box</span>
+		        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48">explore</span>
+		        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48">favorite_border</span>
+	        </div>
+        </div>
+	</nav>
+
+    <div style="display: flex; flex-direction: row; text-align: center; justify-content: center; padding-top: 60px; background-color: #FAFAFA">
+	    <div style="width: 500px; min-width: 500px; height: 1000px; margin-right: 200px;">
+		    <div style="border: solid 1px gray; border-radius: 10px / 10px; background-color: white; width: 480px; margin: 10px; min-height: auto; padding-top: 10px">
+			    <!-- 프로필 -->
+			    <div style="display: flex; flex-direction: row; align-items: center; margin: 0 10px; padding-bottom: 10px">
+			        <div class="box" style="background: #BDBDBD; width: 35px; height: 35px; margin-right: 5px">
+				        <img class="profile" src="http://cdn.edujin.co.kr/news/photo/202102/35063_66368_1421.jpg"></div>
+			        <div>ownzoneday</div>
+		        </div>
+			    <!-- 게시물 사진 -->
+			    <div style="margin-bottom: 10px">
+				    <img style="width: 100%; object-fit: contain" src="http://image.newsis.com/2022/09/30/NISI20220930_0019306239_web.jpg">
+			    </div>
+			    <!-- 좋아요,댓글,보내기,클립 -->
+			    <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 0 10px">
+				    <div>
+					    <span class="material-symbols-outlined" style="margin-right: 10px">favorite</span>
+		                <span class="material-symbols-outlined" style="margin-right: 10px">mode_comment</span>
+					    <span class="material-symbols-outlined">send</span>
+				    </div>
+				    <div>
+					    <span class="material-symbols-outlined">bookmark</span>
+				    </div>
+			    </div>
+			    <!-- 좋아요 누른 사람 -->
+			    <div style="display: flex;flex-direction: row; align-items: center; margin: 0 10px">
+				    <div class="box" style="background: #BDBDBD; width: 25px; height: 25px; margin-right: 5px"><img class="like_profile" src="https://pbs.twimg.com/profile_images/857601851939618817/kNkMrfD6_400x400.jpg"></div>
+			        <div style="text-align: left; font-size: 12px"><b>김동석</b>님 외 <b>5,120명</b>이 좋아합니다.</div>
+			    </div>
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px"><b>ownzoneday</b> 낭만 부여잡는 중</div>
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px">댓글 30,000개 모두 보기</div>
+			    <!-- 댓글 -->
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px"><b>proudit.dd</b> 4명 중에 민지가 제일 예쁘다!</div>
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px"><b>zambbon</b> 민지 남자친구 잘생김ㅋㅋ</div>
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px; padding-bottom: 10px"><b>bonac</b> 내 동생 짱!</div>
+			    <div style="text-align: left; font-size: 10px; margin: 0 10px; color: lightslategray">1일 전</div>
+			    <div style="border-top: solid 1px gray; margin-top: 10px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+				    <span style="margin-left: 10px" class="material-symbols-outlined">sentiment_satisfied</span>
+				    <input type="text" class="form-control" style="box-shadow: none; border: none; outline: none; font-size: 14px; " placeholder="댓글 달기..">
+                    <div style="margin-right: 10px; font-size: 14px; color: skyblue">게시</div>
+			    </div>
+	        </div>
+		    <!-- 두번째 게시물 -->
+		    <div style="border: solid 1px gray; border-radius: 10px / 10px; background-color: white; width: 480px; margin: 10px; min-height: auto; padding-top: 10px">
+			    <!-- 프로필 -->
+			    <div style="display: flex; flex-direction: row; align-items: center; margin: 0 10px; padding-bottom: 10px">
+			        <div class="box" style="background: #BDBDBD; width: 35px; height: 35px; margin-right: 5px">
+				        <img class="profile" src="http://cdn.edujin.co.kr/news/photo/202102/35063_66368_1421.jpg"></div>
+			        <div>ownzoneday</div>
+		        </div>
+			    <!-- 게시물 사진 -->
+			    <div style="margin-bottom: 10px">
+				    <img style="width: 100%; object-fit: contain" src="http://image.newsis.com/2022/09/30/NISI20220930_0019306239_web.jpg">
+			    </div>
+			    <!-- 좋아요,댓글,보내기,클립 -->
+			    <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 0 10px">
+				    <div>
+					    <span class="material-symbols-outlined" style="margin-right: 10px">favorite</span>
+		                <span class="material-symbols-outlined" style="margin-right: 10px">mode_comment</span>
+					    <span class="material-symbols-outlined">send</span>
+				    </div>
+				    <div>
+					    <span class="material-symbols-outlined">bookmark</span>
+				    </div>
+			    </div>
+			    <!-- 좋아요 누른 사람 -->
+			    <div style="display: flex;flex-direction: row; align-items: center; margin: 0 10px">
+				    <div class="box" style="background: #BDBDBD; width: 25px; height: 25px; margin-right: 5px"><img class="like_profile" src="https://pbs.twimg.com/profile_images/857601851939618817/kNkMrfD6_400x400.jpg"></div>
+			        <div style="text-align: left; font-size: 12px"><b>김동석</b>님 외 <b>5,120명</b>이 좋아합니다.</div>
+			    </div>
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px"><b>ownzoneday</b> 낭만 부여잡는 중</div>
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px">댓글 30,000개 모두 보기</div>
+			    <!-- 댓글 -->
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px"><b>proudit.dd</b> 4명 중에 민지가 제일 예쁘다!</div>
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px"><b>zambbon</b> 민지 남자친구 잘생김ㅋㅋ</div>
+			    <div style="text-align: left; font-size: 12px; margin: 0 10px; padding-bottom: 10px"><b>bonac</b> 내 동생 짱!</div>
+			    <div style="text-align: left; font-size: 10px; margin: 0 10px; color: lightslategray">1일 전</div>
+			    <div style="border-top: solid 1px gray; margin-top: 10px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+				    <span style="margin-left: 10px" class="material-symbols-outlined">sentiment_satisfied</span>
+				    <input type="text" class="form-control" style="box-shadow: none; border: none; outline: none; font-size: 14px; " placeholder="댓글 달기..">
+                    <div style="margin-right: 10px; font-size: 14px; color: skyblue">게시</div>
+			    </div>
+	        </div>
+	    </div>
+        <div style="width: 400px; height: 1000px; position: fixed; left: 62%;">
+	        <div style="display: flex; flex-direction: row; align-items: center; margin: 20px;">
+		        <div class="box" style="background: #BDBDBD; width: 60px; height: 60px; margin-right: 5px">
+			        <img class="profile" src="http://cdn.edujin.co.kr/news/photo/202102/35063_66368_1421.jpg">
+		        </div>
+		        <div style="margin-left: 10px; text-align: left">
+			        <div style="font-weight: bold;">ownzoneday</div>
+		            <div style="color: gray">min ji</div>
+		        </div>
+            </div>
+	        <div style="display: flex; flex-direction: row; justify-content: space-between">
+	            <div style="font-weight: bold; color: gray">회원님을 위한 추천</div>
+	            <div><a href="" style="text-decoration: none; font-weight: bold; color: black; font-size: 16px">모두 보기</a></div>
+	        </div>
+	        <!--추천인 프로필 -->
+	        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 10px;">
+		        <div style="display: flex; flex-direction: row">
+			        <div class="box" style="background: #BDBDBD; width: 35px; height: 35px; margin-right: 5px">
+				        <img class="profile" src="http://cdn.edujin.co.kr/news/photo/202102/35063_66368_1421.jpg">
+			        </div>
+			        <div style="margin-left: 10px; text-align: left">
+				        <div style="font-weight: bold; font-size: 14px">proudit.dd</div>
+			            <div style="color: gray; font-size: 14px">민지 남자친구</div>
+			        </div>
+		        </div>
+		        <a href="" style="color: dodgerblue; font-weight: bold; font-size: 14px; text-decoration: none">팔로우</a>
+            </div>
+	        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 10px;">
+		        <div style="display: flex; flex-direction: row">
+			        <div class="box" style="background: #BDBDBD; width: 35px; height: 35px; margin-right: 5px">
+				        <img class="profile" src="http://cdn.edujin.co.kr/news/photo/202102/35063_66368_1421.jpg">
+			        </div>
+			        <div style="margin-left: 10px; text-align: left">
+				        <div style="font-weight: bold; font-size: 14px">proudit.dd</div>
+			            <div style="color: gray; font-size: 14px">민지 남자친구</div>
+			        </div>
+		        </div>
+		        <a href="" style="color: dodgerblue; font-weight: bold; font-size: 14px; text-decoration: none">팔로우</a>
+            </div>
+	        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 10px;">
+		        <div style="display: flex; flex-direction: row">
+			        <div class="box" style="background: #BDBDBD; width: 35px; height: 35px; margin-right: 5px">
+				        <img class="profile" src="http://cdn.edujin.co.kr/news/photo/202102/35063_66368_1421.jpg">
+			        </div>
+			        <div style="margin-left: 10px; text-align: left">
+				        <div style="font-weight: bold; font-size: 14px">proudit.dd</div>
+			            <div style="color: gray; font-size: 14px">민지 남자친구</div>
+			        </div>
+		        </div>
+		        <a href="" style="color: dodgerblue; font-weight: bold; font-size: 14px; text-decoration: none">팔로우</a>
+            </div>
+	        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 10px;">
+		        <div style="display: flex; flex-direction: row">
+			        <div class="box" style="background: #BDBDBD; width: 35px; height: 35px; margin-right: 5px">
+				        <img class="profile" src="http://cdn.edujin.co.kr/news/photo/202102/35063_66368_1421.jpg">
+			        </div>
+			        <div style="margin-left: 10px; text-align: left">
+				        <div style="font-weight: bold; font-size: 14px">proudit.dd</div>
+			            <div style="color: gray; font-size: 14px">민지 남자친구</div>
+			        </div>
+		        </div>
+		        <a href="" style="color: dodgerblue; font-weight: bold; font-size: 14px; text-decoration: none">팔로우</a>
+            </div>
+	        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 10px;">
+		        <div style="display: flex; flex-direction: row">
+			        <div class="box" style="background: #BDBDBD; width: 35px; height: 35px; margin-right: 5px">
+				        <img class="profile" src="http://cdn.edujin.co.kr/news/photo/202102/35063_66368_1421.jpg">
+			        </div>
+			        <div style="margin-left: 10px; text-align: left">
+				        <div style="font-weight: bold; font-size: 14px">proudit.dd</div>
+			            <div style="color: gray; font-size: 14px">민지 남자친구</div>
+			        </div>
+		        </div>
+		        <a href="" style="color: dodgerblue; font-weight: bold; font-size: 14px; text-decoration: none">팔로우</a>
+            </div>
+	        <div style="margin-top: 40px; font-size: 12px; color: gray; text-align: left">
+		        소개 도움말 홍보센터 API<br>개인정보처리방침 약관 위치 인기 계정 해시태그 언어
+	        </div>
+	        <div style="margin-top: 20px; font-size: 12px; color: gray; text-align: left">2022 INSTAGRAM FROM META</div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap CSS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
